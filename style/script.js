@@ -8,11 +8,11 @@ window.removeEventListener("click", playMusicOnce);
 window.addEventListener("click", playMusicOnce);
 
 const messages = [
-  "I Love You1",
-  "I Love You2",
-  "I Love You3",
-  "I Love You4",
-  "I Love You5"
+  "I Love You",
+  "I Love You",
+  "I Love You",
+  "I Love You",
+  "I Love You"
 ];
 const fallingTexts = [];
 
