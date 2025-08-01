@@ -8,11 +8,11 @@ window.removeEventListener("click", playMusicOnce);
 window.addEventListener("click", playMusicOnce);
 
 const messages = [
-  "Em là vũ trụ của anh",
-  "Tình yêu bất tận giữa các vì sao",
-  "Em là ngôi sao sáng nhất",
-  "Anh tỏa sáng là vì em",
-  "Em thật tỏa sáng trên bầu trời của anh"
+  "I Love You1",
+  "I Love You2",
+  "I Love You3",
+  "I Love You4",
+  "I Love You5"
 ];
 const fallingTexts = [];
 
