@@ -1,0 +1,53 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Pacifico', cursive;
+    }
+    body {
+      overflow: hidden;
+      background: radial-gradient(ellipse at center, #1a0033 0%, #000011 50%, #000000 100%);
+      height: 100vh;
+      cursor: crosshair;
+    }
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .cosmic-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(75, 0, 130, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 70%, rgba(25, 25, 112, 0.3) 0%, transparent 50%);
+      z-index: 0;
+    }
+    .message {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      font-size: clamp(16px, 3vw, 24px);
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      animation: fadeInMessage 1s ease-in-out 1s forwards;
+    }
+    .subtitle {
+      font-size: clamp(12px, 2vw, 16px);
+      margin-top: 10px;
+      color: #bbb;
+      font-style: italic;
+    }
+    @keyframes fadeInMessage {
+      0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+      100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
